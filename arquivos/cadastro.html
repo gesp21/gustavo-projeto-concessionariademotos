@@ -1,0 +1,104 @@
+<!DCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<link href="estilo7.css" rel="stylesheet">
+		<title></title>
+	</head>
+	<body>
+		<header><!-- Topo da Página-->
+			<img class="img1" src="../logo/logo.png">
+		<nav>
+			<ul><!--Navegação ou Menu da Página-->
+				<li><a href="../index.html">Página Inicial</a></li>
+				<li><a href="arqv1.html">História</a></li>
+				<li><a href="../arqmotos/arquivo2.html">Motos</a></li>
+				<li><a href="" class="a1">Cadastrar</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+	<br><br>
+	<main>
+<div class="div9">	
+		<form action="arquivo.php" method="GET">
+		<br>
+			<div>
+			<label> Nome:
+				<input type="text" name="nomecompleto" placeholder="Digite seu nome completo"> 
+		    </label>
+            </div>
+<br>			
+			<div>
+			<label> CPF:
+				<input type="number" name="cpf" placeholder="Digite seu CPF"> 
+		    </label>
+            </div>
+<br>
+			<div>
+			<label>Email:
+			    <input type="email" name="email" placeholder="Digite o email que você mais utiliza">
+			</label>
+			</div>
+<br>
+			<div>
+			<label>Senha:
+				<input type="password" name="senha" placeholder="senha até 6 caracteres" maxlength="6">
+			</label>
+			</div>
+<br>
+			<div>
+			<label>Data Nascimento:
+				<input type="date" name="datanasc">
+			</label>
+			</div>
+<br>
+            <div>
+			<label>Altura:
+				<input type="number" name="altura" step="0.01" min="1.05" max="2.65" value="1.50" >
+			</label>
+			</div>
+<br>
+            <div>
+			<label>Peso:
+				<input type="number" name="peso" step="0.5" min="10" max="160" value="55">
+			</label>
+			</div>
+			<br>
+			
+			<div>
+				<label>Moto:
+				<input type="text" name="moto" list="opcaomoto">
+				<datalist id="opcaomoto">
+					<option value="">
+					<option value="POP-110i">
+					<option value="biz-125">
+					<option value="forza-125">
+					<option value="CG-Cargo">
+					<option value="NXR-160-Bros">
+					<option value="CB-Twister">
+					<option value="CBR-500r">
+					<option value="NC-750x">
+				</datalist>
+				</label>
+			</div>		
+			<div class="div10">
+			<label>Comentário:<br>
+				<textarea name="comentario" rows="5" cols="40" ></textarea>
+				</label>
+			</div>
+			
+			<div>
+			<br>
+			<br>
+			<br>
+			<div class="div7">
+				<button type="submit">Registrar</button><br>
+				<button type="submit">Entrar</button><br>
+				<button type="reset">Apagar Formulário</button>
+			</div>
+			</div>
+		</form>
+	</main>
+	</body>
+</html>
